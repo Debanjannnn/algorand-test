@@ -54,7 +54,7 @@ Typical workflow:
 ---
 
 ## Deployed Smart Contract Link
-image.png
+<img width="1912" height="957" alt="image" src="https://github.com/user-attachments/assets/b5c87a51-e745-4730-b85f-9decc1370141" />
 
 **Smart Contract on Algorand TestNet:**
 [https://lora.algokit.io/testnet/application/745361495](https://lora.algokit.io/testnet/application/745361495)

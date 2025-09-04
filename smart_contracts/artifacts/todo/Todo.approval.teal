@@ -1,0 +1,99 @@
+#pragma version 10
+#pragma typetrack false
+
+// @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
+main:
+    bytecblock "todolist"
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // smart_contracts/todo/contract.algo.ts:5
+    // key: "todolist",
+    bytec_0 // "todolist"
+    // smart_contracts/todo/contract.algo.ts:6
+    // initialValue : " "
+    pushbytes " "
+    // smart_contracts/todo/contract.algo.ts:4-7
+    // todolist = GlobalState<string>({
+    //    key: "todolist",
+    //    initialValue : " "
+    // })
+    app_global_put
+
+main_after_if_else@2:
+    // smart_contracts/todo/contract.algo.ts:3
+    // export class Todo extends Contract {
+    txn NumAppArgs
+    bz main_bare_routing@8
+    pushbytes 0x04231cd4 // method "Addtodo(string,string)string"
+    txna ApplicationArgs 0
+    match main_Addtodo_route@5
+
+main_after_if_else@12:
+    // smart_contracts/todo/contract.algo.ts:3
+    // export class Todo extends Contract {
+    pushint 0 // 0
+    return
+
+main_Addtodo_route@5:
+    // smart_contracts/todo/contract.algo.ts:9
+    // Addtodo(title:string, description:string):string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/todo/contract.algo.ts:3
+    // export class Todo extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    // smart_contracts/todo/contract.algo.ts:9
+    // Addtodo(title:string, description:string):string {
+    callsub Addtodo
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    pushbytes 0x151f7c75
+    swap
+    concat
+    log
+    pushint 1 // 1
+    return
+
+main_bare_routing@8:
+    // smart_contracts/todo/contract.algo.ts:3
+    // export class Todo extends Contract {
+    txn OnCompletion
+    bnz main_after_if_else@12
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    pushint 1 // 1
+    return
+
+
+// smart_contracts/todo/contract.algo.ts::Todo.Addtodo(title: bytes, description: bytes) -> bytes:
+Addtodo:
+    // smart_contracts/todo/contract.algo.ts:9
+    // Addtodo(title:string, description:string):string {
+    proto 2 1
+    // smart_contracts/todo/contract.algo.ts:10
+    // this.todolist.value = title + "" +  description;
+    frame_dig -2
+    frame_dig -1
+    concat
+    // smart_contracts/todo/contract.algo.ts:5
+    // key: "todolist",
+    bytec_0 // "todolist"
+    // smart_contracts/todo/contract.algo.ts:10
+    // this.todolist.value = title + "" +  description;
+    swap
+    app_global_put
+    // smart_contracts/todo/contract.algo.ts:11
+    // return title;
+    frame_dig -2
+    retsub

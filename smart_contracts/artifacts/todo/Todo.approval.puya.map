@@ -1,0 +1,423 @@
+{
+  "version": 3,
+  "sources": [
+    "/media/debanjannn/USB STICK/todo/projects/todo/smart_contracts/todo/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;AAIS;AACU;;;AAFlB;AADD;;AAAA;;;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;;;AAMC;;AAAA;AAAA;AAAA;;AAAA;AAND;;;AAAA;;;AAAA;;;AAAA;;;AAMC;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;;AAND;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;;AAMC;;;AACyB;;AAAA;;AAAA;AALjB;AAKL;AAAA;AACA;;AAAA",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "bytecblock \"todolist\""
+    },
+    "12": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "reinterpret_bool%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bool%0#0"
+      ]
+    },
+    "14": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "17": {
+      "op": "bytec_0 // \"todolist\"",
+      "defined_out": [
+        "\"todolist\""
+      ],
+      "stack_out": [
+        "\"todolist\""
+      ]
+    },
+    "18": {
+      "op": "pushbytes \" \"",
+      "defined_out": [
+        "\" \"",
+        "\"todolist\""
+      ],
+      "stack_out": [
+        "\"todolist\"",
+        "\" \""
+      ]
+    },
+    "21": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "22": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "24": {
+      "op": "bz main_bare_routing@8",
+      "stack_out": []
+    },
+    "27": {
+      "op": "pushbytes 0x04231cd4 // method \"Addtodo(string,string)string\"",
+      "defined_out": [
+        "Method(Addtodo(string,string)string)"
+      ],
+      "stack_out": [
+        "Method(Addtodo(string,string)string)"
+      ]
+    },
+    "33": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(Addtodo(string,string)string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(Addtodo(string,string)string)",
+        "tmp%2#0"
+      ]
+    },
+    "36": {
+      "op": "match main_Addtodo_route@5",
+      "stack_out": []
+    },
+    "40": {
+      "block": "main_after_if_else@12",
+      "stack_in": [],
+      "op": "pushint 0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "42": {
+      "op": "return",
+      "stack_out": []
+    },
+    "43": {
+      "block": "main_Addtodo_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "45": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "46": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "47": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "49": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "50": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "53": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "56": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "59": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "62": {
+      "callsub": "smart_contracts/todo/contract.algo.ts::Todo.Addtodo",
+      "op": "callsub Addtodo",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "65": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "66": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "67": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "68": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "71": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "72": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "73": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "79": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "80": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "81": {
+      "op": "log",
+      "stack_out": []
+    },
+    "82": {
+      "op": "pushint 1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "84": {
+      "op": "return",
+      "stack_out": []
+    },
+    "85": {
+      "block": "main_bare_routing@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "87": {
+      "op": "bnz main_after_if_else@12",
+      "stack_out": []
+    },
+    "90": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "92": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "93": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "94": {
+      "op": "pushint 1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "96": {
+      "op": "return",
+      "stack_out": []
+    },
+    "97": {
+      "subroutine": "smart_contracts/todo/contract.algo.ts::Todo.Addtodo",
+      "params": {
+        "title#0": "bytes",
+        "description#0": "bytes"
+      },
+      "block": "Addtodo",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "100": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "title#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0 (copy)"
+      ]
+    },
+    "102": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "description#0 (copy)",
+        "title#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0 (copy)",
+        "description#0 (copy)"
+      ]
+    },
+    "104": {
+      "op": "concat",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "105": {
+      "op": "bytec_0 // \"todolist\"",
+      "defined_out": [
+        "\"todolist\"",
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"todolist\""
+      ]
+    },
+    "106": {
+      "op": "swap",
+      "stack_out": [
+        "\"todolist\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "107": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "108": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "title#0 (copy)"
+      ]
+    },
+    "110": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

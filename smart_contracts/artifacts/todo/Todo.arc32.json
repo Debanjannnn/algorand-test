@@ -1,0 +1,64 @@
+{
+    "hints": {
+        "Addtodo(string,string)string": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCiNwcmFnbWEgdHlwZXRyYWNrIGZhbHNlCgovLyBAYWxnb3JhbmRmb3VuZGF0aW9uL2FsZ29yYW5kLXR5cGVzY3JpcHQvYXJjNC9pbmRleC5kLnRzOjpDb250cmFjdC5hcHByb3ZhbFByb2dyYW0oKSAtPiB1aW50NjQ6Cm1haW46CiAgICBieXRlY2Jsb2NrICJ0b2RvbGlzdCIKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICBibnogbWFpbl9hZnRlcl9pZl9lbHNlQDIKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6NQogICAgLy8ga2V5OiAidG9kb2xpc3QiLAogICAgYnl0ZWNfMCAvLyAidG9kb2xpc3QiCiAgICAvLyBzbWFydF9jb250cmFjdHMvdG9kby9jb250cmFjdC5hbGdvLnRzOjYKICAgIC8vIGluaXRpYWxWYWx1ZSA6ICIgIgogICAgcHVzaGJ5dGVzICIgIgogICAgLy8gc21hcnRfY29udHJhY3RzL3RvZG8vY29udHJhY3QuYWxnby50czo0LTcKICAgIC8vIHRvZG9saXN0ID0gR2xvYmFsU3RhdGU8c3RyaW5nPih7CiAgICAvLyAgICBrZXk6ICJ0b2RvbGlzdCIsCiAgICAvLyAgICBpbml0aWFsVmFsdWUgOiAiICIKICAgIC8vIH0pCiAgICBhcHBfZ2xvYmFsX3B1dAoKbWFpbl9hZnRlcl9pZl9lbHNlQDI6CiAgICAvLyBzbWFydF9jb250cmFjdHMvdG9kby9jb250cmFjdC5hbGdvLnRzOjMKICAgIC8vIGV4cG9ydCBjbGFzcyBUb2RvIGV4dGVuZHMgQ29udHJhY3QgewogICAgdHhuIE51bUFwcEFyZ3MKICAgIGJ6IG1haW5fYmFyZV9yb3V0aW5nQDgKICAgIHB1c2hieXRlcyAweDA0MjMxY2Q0IC8vIG1ldGhvZCAiQWRkdG9kbyhzdHJpbmcsc3RyaW5nKXN0cmluZyIKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDAKICAgIG1hdGNoIG1haW5fQWRkdG9kb19yb3V0ZUA1CgptYWluX2FmdGVyX2lmX2Vsc2VAMTI6CiAgICAvLyBzbWFydF9jb250cmFjdHMvdG9kby9jb250cmFjdC5hbGdvLnRzOjMKICAgIC8vIGV4cG9ydCBjbGFzcyBUb2RvIGV4dGVuZHMgQ29udHJhY3QgewogICAgcHVzaGludCAwIC8vIDAKICAgIHJldHVybgoKbWFpbl9BZGR0b2RvX3JvdXRlQDU6CiAgICAvLyBzbWFydF9jb250cmFjdHMvdG9kby9jb250cmFjdC5hbGdvLnRzOjkKICAgIC8vIEFkZHRvZG8odGl0bGU6c3RyaW5nLCBkZXNjcmlwdGlvbjpzdHJpbmcpOnN0cmluZyB7CiAgICB0eG4gT25Db21wbGV0aW9uCiAgICAhCiAgICBhc3NlcnQgLy8gT25Db21wbGV0aW9uIGlzIG5vdCBOb09wCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgYXNzZXJ0IC8vIGNhbiBvbmx5IGNhbGwgd2hlbiBub3QgY3JlYXRpbmcKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6MwogICAgLy8gZXhwb3J0IGNsYXNzIFRvZG8gZXh0ZW5kcyBDb250cmFjdCB7CiAgICB0eG5hIEFwcGxpY2F0aW9uQXJncyAxCiAgICBleHRyYWN0IDIgMAogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgogICAgZXh0cmFjdCAyIDAKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6OQogICAgLy8gQWRkdG9kbyh0aXRsZTpzdHJpbmcsIGRlc2NyaXB0aW9uOnN0cmluZyk6c3RyaW5nIHsKICAgIGNhbGxzdWIgQWRkdG9kbwogICAgZHVwCiAgICBsZW4KICAgIGl0b2IKICAgIGV4dHJhY3QgNiAyCiAgICBzd2FwCiAgICBjb25jYXQKICAgIHB1c2hieXRlcyAweDE1MWY3Yzc1CiAgICBzd2FwCiAgICBjb25jYXQKICAgIGxvZwogICAgcHVzaGludCAxIC8vIDEKICAgIHJldHVybgoKbWFpbl9iYXJlX3JvdXRpbmdAODoKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6MwogICAgLy8gZXhwb3J0IGNsYXNzIFRvZG8gZXh0ZW5kcyBDb250cmFjdCB7CiAgICB0eG4gT25Db21wbGV0aW9uCiAgICBibnogbWFpbl9hZnRlcl9pZl9lbHNlQDEyCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgIQogICAgYXNzZXJ0IC8vIGNhbiBvbmx5IGNhbGwgd2hlbiBjcmVhdGluZwogICAgcHVzaGludCAxIC8vIDEKICAgIHJldHVybgoKCi8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6OlRvZG8uQWRkdG9kbyh0aXRsZTogYnl0ZXMsIGRlc2NyaXB0aW9uOiBieXRlcykgLT4gYnl0ZXM6CkFkZHRvZG86CiAgICAvLyBzbWFydF9jb250cmFjdHMvdG9kby9jb250cmFjdC5hbGdvLnRzOjkKICAgIC8vIEFkZHRvZG8odGl0bGU6c3RyaW5nLCBkZXNjcmlwdGlvbjpzdHJpbmcpOnN0cmluZyB7CiAgICBwcm90byAyIDEKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6MTAKICAgIC8vIHRoaXMudG9kb2xpc3QudmFsdWUgPSB0aXRsZSArICIiICsgIGRlc2NyaXB0aW9uOwogICAgZnJhbWVfZGlnIC0yCiAgICBmcmFtZV9kaWcgLTEKICAgIGNvbmNhdAogICAgLy8gc21hcnRfY29udHJhY3RzL3RvZG8vY29udHJhY3QuYWxnby50czo1CiAgICAvLyBrZXk6ICJ0b2RvbGlzdCIsCiAgICBieXRlY18wIC8vICJ0b2RvbGlzdCIKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6MTAKICAgIC8vIHRoaXMudG9kb2xpc3QudmFsdWUgPSB0aXRsZSArICIiICsgIGRlc2NyaXB0aW9uOwogICAgc3dhcAogICAgYXBwX2dsb2JhbF9wdXQKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy90b2RvL2NvbnRyYWN0LmFsZ28udHM6MTEKICAgIC8vIHJldHVybiB0aXRsZTsKICAgIGZyYW1lX2RpZyAtMgogICAgcmV0c3ViCg==",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDEwCiNwcmFnbWEgdHlwZXRyYWNrIGZhbHNlCgovLyBAYWxnb3JhbmRmb3VuZGF0aW9uL2FsZ29yYW5kLXR5cGVzY3JpcHQvYmFzZS1jb250cmFjdC5kLnRzOjpCYXNlQ29udHJhY3QuY2xlYXJTdGF0ZVByb2dyYW0oKSAtPiB1aW50NjQ6Cm1haW46CiAgICBwdXNoaW50IDEgLy8gMQogICAgcmV0dXJuCg=="
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 1,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "todolist": {
+                    "type": "bytes",
+                    "key": "todolist"
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "Todo",
+        "methods": [
+            {
+                "name": "Addtodo",
+                "args": [
+                    {
+                        "type": "string",
+                        "name": "title"
+                    },
+                    {
+                        "type": "string",
+                        "name": "description"
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "string"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}
